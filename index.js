@@ -11,7 +11,7 @@ imagesArray.forEach(image => {
     if (img.dataset.id === last) {
       fadeIn(info)
     }
-  }, 2000 * i);
+  }, 1000 * i);
   ++i;
 });
 
