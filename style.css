@@ -14,33 +14,17 @@ section img {
   padding: 10px;
 }
 
-[data-id='1'] {
-  padding-bottom: 199px;
-}
-
-[data-id='2'] {
-  width: 400px;
-  padding-right: 8px;
-  padding-bottom: 80px;
-}
-
-[data-id='3'] {
-  padding-bottom: 76px;
-  padding-bottom: 136px;
-}
-
-[data-id='logo_1'] {
-  padding-bottom: 76px;
-  padding-bottom: 136px;
-}
-
 .info {
+  display: flex;
   position: absolute;
+  width: 100%;
   top: 0;
-  left: 0;
-  transition: 1s ease;
-  padding-bottom: 271px;
-  padding-right: 165px;
+}
+
+.info img {
+  margin: auto;
+  padding-top: 50px;
+  padding-right: 99px;
 }
 
 .swipe {
