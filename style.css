@@ -1,7 +1,13 @@
 body {
+  width: 100vw;
+  height: 100vh;
   background-color: white;
   font-family: sans-serif;
   overflow: hidden;
+}
+
+img {
+  width: 300px;
 }
 
 section {
@@ -18,14 +24,12 @@ section img {
   display: flex;
   position: absolute;
   width: 100%;
+  height: 100vh;
   top: 0;
+  justify-content: center;
+  align-items: center;
 }
 
-.info img {
-  margin: auto;
-  padding-top: 30px;
-  padding-right: 99px;
-}
 
 .swipe {
   position: fixed;
@@ -33,4 +37,52 @@ section img {
   display: flex;
   bottom: 0;
   justify-content: center;
+}
+
+@media (min-width: 720px) {
+  .info img {
+    display: block;
+    position: absolute;
+  }
+
+  .desktop1 {
+    margin-top: -11em;
+    margin-left: -12em;
+    width: 450px;
+  }
+
+  .desktop2 {
+    margin-top: 4em;
+    margin-left: 13em;
+  }
+
+  .info .image {
+    display: none;
+  }
+
+}
+
+@media (max-width: 719px) {
+  .image {
+    display: block;
+    position: absolute;
+  }
+
+  .desktop1,
+  .desktop2 {
+    display: none;
+  }
+
+  .mobile1 {
+    top: 0;
+  }
+
+  .mobile2 {
+    bottom: 1em;
+  }
+
+  .info {
+    height: 100vh;
+  }
+
 }
